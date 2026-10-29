@@ -1,0 +1,30 @@
+{
+  "token-shield": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python3 <INSTALL_DIR>/adapters/antigravity/antigravity_hook.py session-start",
+        "timeout": 15
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python3 <INSTALL_DIR>/adapters/antigravity/antigravity_hook.py pre-invocation",
+        "timeout": 5
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "write_file|edit_file|run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 <INSTALL_DIR>/adapters/antigravity/antigravity_hook.py pre-tool",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
