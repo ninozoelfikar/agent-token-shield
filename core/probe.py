@@ -99,10 +99,10 @@ def main():
     target = sys.argv[1]
     ok, msg = probe_file(target)
     if ok:
-        print(f"✓ [PASS 0-Token] {target}: {msg}")
+        print(f" [PASS 0-Token] {target}: {msg}")
         sys.exit(0)
     else:
-        print(f"✗ [FAIL 0-Token] {target}: {msg}", file=sys.stderr)
+        print(f" [FAIL 0-Token] {target}: {msg}", file=sys.stderr)
         sys.exit(1)
 
 

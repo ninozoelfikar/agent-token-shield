@@ -69,7 +69,7 @@ class LazyLoader:
             lines.append(f"• {m['name']} ({m['type']}): {m['brief']}")
         
         lines.append("─────────────────────────────────────────────────────────────────")
-        lines.append("⚡ RULE: Lazy-load mode active. Do not read full files until explicitly required.")
+        lines.append(" RULE: Lazy-load mode active. Do not read full files until explicitly required.")
         return "\n".join(lines)
 
 

@@ -21,10 +21,10 @@ try:
     if "token-shield" in data:
         del data["token-shield"]
         hooks_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
-        print("    ✓ Cleaned hooks from hooks.json")
+        print("     Cleaned hooks from hooks.json")
 except Exception:
     pass
 EOF
 fi
 
-echo "✓ Agent Token Shield uninstalled cleanly."
+echo " Agent Token Shield uninstalled cleanly."

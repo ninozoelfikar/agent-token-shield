@@ -40,7 +40,7 @@ def session_start():
     
     ctx = (
         f"{radar}\n\n"
-        "⚡ [TOKEN SHIELD ACTIVE]\n"
+        " [TOKEN SHIELD ACTIVE]\n"
         "1. Work in modular fashion: use existing tools and templates.\n"
         "2. Deterministic validation: test syntax locally before reporting.\n"
         "3. Loop breaker: identical repetitive calls will be rejected."
@@ -50,7 +50,7 @@ def session_start():
 
 def pre_invocation():
     # Keep pre-invocation minimal (~50 tokens) to preserve cache hit
-    reminder = "⚡ Token Shield: proceed concisely, avoid repeating failed steps, use modular tools."
+    reminder = " Token Shield: proceed concisely, avoid repeating failed steps, use modular tools."
     out({"injectSteps": [{"systemMessage": {"systemMessage": reminder}}]})
 
 

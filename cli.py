@@ -20,10 +20,10 @@ from telemetry import TelemetryAuditor
 def cmd_probe(args):
     ok, msg = probe_file(args.file)
     if ok:
-        print(f"✓ [PASS 0-Token] {args.file}: {msg}")
+        print(f" [PASS 0-Token] {args.file}: {msg}")
         sys.exit(0)
     else:
-        print(f"✗ [FAIL 0-Token] {args.file}: {msg}", file=sys.stderr)
+        print(f" [FAIL 0-Token] {args.file}: {msg}", file=sys.stderr)
         sys.exit(1)
 
 

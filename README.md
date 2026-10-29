@@ -1,6 +1,6 @@
-# Agent Token Shield 🛡️⚡
+# Agent Token Shield ️
 
-> **Cut AI Coding Agent Token Waste by 38% – 58% Automatically.**  
+> **Cut AI Coding Agent Token Waste by 38% – 58% Automatically.** 
 > A lightweight, universal agent harness that eliminates repetitive loops, monolithic context dumping, and LLM-based syntax checking.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 The Problem: Why Coding Agents Burn Tokens
+## The Problem: Why Coding Agents Burn Tokens
 
 Modern AI coding agents (Antigravity, Gemini CLI, Claude Code, Aider, Cursor) frequently suffer from three major inefficiencies:
 
@@ -21,7 +21,7 @@ Modern AI coding agents (Antigravity, Gemini CLI, Claude Code, Aider, Cursor) fr
 
 ---
 
-## 📊 Empirical Benchmark (Real-World 2.8 Billion Token Dataset)
+## Empirical Benchmark (Real-World 2.8 Billion Token Dataset)
 
 In an production environment spanning 26 active working days and 21,044 model calls, **Agent Token Shield** was deployed to measure real impact:
 
@@ -35,17 +35,17 @@ In an production environment spanning 26 active working days and 21,044 model ca
 
 ---
 
-## 🏗️ 5 Pillars of Token Shield
+## ️ 5 Pillars of Token Shield
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                   AGENT TOKEN SHIELD ARCHITECTURE                      │
+│ AGENT TOKEN SHIELD ARCHITECTURE │
 ├────────────────────────────────┬───────────────────────────────────────┤
-│ 1. Permanent Modular Workshop  │ Tools & SOPs live as permanent molds  │
-│ 2. Context Lazy-Loading        │ <250-token Radar Boot; load on-demand │
-│ 3. Zero-Token Local Probe      │ OS-level syntax validation (0 tokens) │
-│ 4. Runtime Anti-Loop Guard     │ Hard-denies repetitive tool calls     │
-│ 5. Static Context Prefix       │ Maximize Provider Context Caching     │
+│ 1. Permanent Modular Workshop │ Tools & SOPs live as permanent molds │
+│ 2. Context Lazy-Loading │ <250-token Radar Boot; load on-demand │
+│ 3. Zero-Token Local Probe │ OS-level syntax validation (0 tokens) │
+│ 4. Runtime Anti-Loop Guard │ Hard-denies repetitive tool calls │
+│ 5. Static Context Prefix │ Maximize Provider Context Caching │
 └────────────────────────────────┴───────────────────────────────────────┘
 ```
 
@@ -57,7 +57,7 @@ In an production environment spanning 26 active working days and 21,044 model ca
 
 ---
 
-## 🚀 Quickstart & Installation
+## Quickstart & Installation
 
 ### One-Line Install (Linux / macOS)
 
@@ -74,7 +74,7 @@ The installer will:
 
 ---
 
-## 💻 CLI Usage
+## CLI Usage
 
 ### 1. Zero-Token Local Syntax Probe
 Test your files instantly before committing or reporting task completion:
@@ -85,7 +85,7 @@ token-shield probe config.json
 ```
 Output:
 ```
-✓ [PASS 0-Token] src/app.py: Python syntax OK
+[PASS] [PASS 0-Token] src/app.py: Python syntax OK
 ```
 
 ### 2. View Token Telemetry & Savings
@@ -102,7 +102,7 @@ token-shield radar --dir .
 
 ---
 
-## 🔌 Platform Compatibility & Integration
+## Platform Compatibility & Integration
 
 Agent Token Shield is designed to be **100% platform-agnostic**:
 
@@ -121,44 +121,44 @@ shield = TokenShieldMiddleware(repeat_limit=3)
 
 # Intercept tool call
 result = shield.intercept_tool(
-    session_id="session_123",
-    tool_name="edit_file",
-    tool_args={"path": "main.py", "target": "a", "replacement": "b"},
-    execute_fn=actual_tool_executor
+ session_id="session_123",
+ tool_name="edit_file",
+ tool_args={"path": "main.py", "target": "a", "replacement": "b"},
+ execute_fn=actual_tool_executor
 )
 ```
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 agent-token-shield/
-├── README.md               # Architecture documentation & benchmarks
-├── LICENSE                 # MIT License
-├── install.sh              # One-line installer script
-├── uninstall.sh            # Clean rollback script
-├── cli.py                  # Main CLI entrypoint
+├── README.md # Architecture documentation & benchmarks
+├── LICENSE # MIT License
+├── install.sh # One-line installer script
+├── uninstall.sh # Clean rollback script
+├── cli.py # Main CLI entrypoint
 ├── bin/
-│   └── token-shield        # Executable runner
+│ └── token-shield # Executable runner
 ├── core/
-│   ├── probe.py            # Zero-token deterministic syntax validator
-│   ├── loop_guard.py       # Sliding-window anti-loop guard
-│   ├── lazy_loader.py      # Compact <250-token radar indexer
-│   └── telemetry.py        # Token audit & cache-hit calculator
+│ ├── probe.py # Zero-token deterministic syntax validator
+│ ├── loop_guard.py # Sliding-window anti-loop guard
+│ ├── lazy_loader.py # Compact <250-token radar indexer
+│ └── telemetry.py # Token audit & cache-hit calculator
 ├── adapters/
-│   ├── antigravity/        # Gemini / Antigravity lifecycle hooks
-│   ├── claude/             # Claude Code hook integration
-│   └── generic/            # Universal Python agent middleware
+│ ├── antigravity/ # Gemini / Antigravity lifecycle hooks
+│ ├── claude/ # Claude Code hook integration
+│ └── generic/ # Universal Python agent middleware
 ├── skills/
-│   └── token-shield/       # Agent skill specification (SKILL.md)
+│ └── token-shield/ # Agent skill specification (SKILL.md)
 └── tests/
-    └── test_shield.py      # Unit test suite
+ └── test_shield.py # Unit test suite
 ```
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Run the included unit test suite:
 ```bash
@@ -167,5 +167,5 @@ python3 tests/test_shield.py
 
 ---
 
-## 📄 License
+## License
 MIT License. Free to use, modify, and distribute in personal and commercial AI workflows.

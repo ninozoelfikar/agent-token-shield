@@ -61,12 +61,12 @@ data["token-shield"] = {
 }
 
 hooks_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
-print("    ✓ Hooks registered successfully.")
+print("     Hooks registered successfully.")
 EOF
 fi
 
 echo ""
-echo "✓ Installation completed successfully!"
+echo " Installation completed successfully!"
 echo "  Run 'token-shield stats' to inspect your token usage."
 echo "  Run 'token-shield probe <file>' to test 0-token local syntax validation."
 echo "=========================================================="
